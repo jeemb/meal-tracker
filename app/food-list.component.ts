@@ -16,5 +16,6 @@ export class FoodListComponent {
 
   selectFood(food: Food) {
   this.clickSender.emit(food);
+  console.log(food);
 }
 }
