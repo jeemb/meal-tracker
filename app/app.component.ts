@@ -5,8 +5,10 @@ import { Food } from './food.model';
   selector: 'my-app',
   template: `
   <div class='container'>
+  <div id="header">
     <h1>Meal Tracker</h1>
     <h3>Click on item to edit</h3>
+  </div>  
     <hr>
     <food-list [foods]="foods" (clickSender)="selectFood($event)"></food-list>
     <hr>
