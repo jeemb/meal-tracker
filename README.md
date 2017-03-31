@@ -9,7 +9,6 @@ This Angular.js application displays food intake information. Users may add, edi
 * `npm install`
 * `bower install`
 * `gulp serve`
-* Visit [http://localhost:4200]
 
 ## Planning
 

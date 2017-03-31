@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Food } from './food.model';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   template: `
   <div class='container'>
     <h1>Meal Tracker</h1>
@@ -16,6 +16,16 @@ export class AppComponent {
     new Food('coffee', '200', 'without milk this morning'),
     new Food('breakfast sandwich', '250', 'bacon cheese and egg'),
     new Food('pasta', '350', 'with sauce')
-  ]
+  ];
+
+  selectedFood = null;
+
+  selectFood(food) {
+    if(this.selectedFood === food) {
+      this.selectedFood = null;
+    } else {
+      this.selectedFood = food;
+    }
+  }
 
 }
