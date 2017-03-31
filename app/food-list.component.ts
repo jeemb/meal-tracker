@@ -9,9 +9,13 @@ template: `
     <option value="highCalories">High Calories</option>
     <option value="lowCalories">Low Calories</option>
   </select>
-<ul>
-<li div *ngFor="let food of foods" (click)="selectFood(food)"> Name: {{food.name}} Calories: {{food.calories}} Details: {{food.details}} </li>
+<div *ngFor="let food of foods | calories:filterByCalories">
+<ul (click)="selectFood(food)">
+  <li> Name: {{food.name}}</li>
+  <li> Calories: {{food.calories}}</li>
+  <li> Details: {{food.details}}</li>
 </ul>
+</div>
 `
 })
 
@@ -25,7 +29,7 @@ export class FoodListComponent {
   this.clickSender.emit(food);
 }
 
-onCaloriesChange(option){
-  this.filterByCalories = option;
-}
+  onCaloriesChange(option){
+    this.filterByCalories = option;
+  }
 }

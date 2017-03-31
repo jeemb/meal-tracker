@@ -21,7 +21,7 @@ import { Food } from './food.model';
 export class NewFoodComponent {
   @Output() newFoodSender = new EventEmitter();
 
-    submitForm(name: string, calories: string, details: string) {
+    submitForm(name: string, calories: number, details: string) {
       var newFood: Food = new Food(name, calories, details);
       this.newFoodSender.emit(newFood);
     }
