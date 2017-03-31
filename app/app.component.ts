@@ -8,6 +8,7 @@ import { Food } from './food.model';
     <h1>Meal Tracker</h1>
     <food-list [foods]="foods" (clickSender)="selectFood($event)"></food-list>
     <edit-food [selectedFood]='selectedFood' (clickSender)="finishedEditing()"></edit-food>
+    <new-food (newFoodSender)="newFood($event)"></new-food>
   </div>
   `
 })
@@ -32,5 +33,9 @@ export class AppComponent {
   finishedEditing() {
     this.selectedFood = null;
   }
+
+  newFood(food) {
+  this.foods.push(food);
+}
 
 }
