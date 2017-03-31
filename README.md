@@ -1,8 +1,14 @@
 # Meal-Tracker
 
+#### Angular.js Program 3.31.2017
+
+#### By Jennifer Beem
+
+## Description
+
 This Angular.js application displays food intake information. Users may add, edit, and delete food items consumed  and filter based on caloric content.
 
-## Installation
+## Setup/Installation Requirements
 
 * `git clone <repository-url>`
 * `cd meal-tracker`
@@ -28,3 +34,9 @@ This Angular.js application displays food intake information. Users may add, edi
 3. Polish
   * Refactor if necessary
   * Update README (if needed)
+
+###
+License
+
+Copyright (c) 2017 Jennifer Beem
+This software is licensed under the MIT license.

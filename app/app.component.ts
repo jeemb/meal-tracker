@@ -11,6 +11,7 @@ import { Food } from './food.model';
     <food-list [foods]="foods" (clickSender)="selectFood($event)"></food-list>
     <hr>
     <edit-food [selectedFood]='selectedFood' (clickSender)="finishedEditing()"></edit-food>
+    <hr>
     <new-food (newFoodSender)="newFood($event)"></new-food>
   </div>
   `

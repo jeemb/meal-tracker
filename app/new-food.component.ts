@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'new-food',
   template: `
   <div class="form-group" id="new-food">
-  <h1>Log A New Food Item</h1>
+  <h3>Log A New Food Item</h3>
   <label>Enter Food Name</label>
   <input #newName class="form-control">
   <label>Enter Caloric Information</label>
@@ -13,7 +13,7 @@ import { Food } from './food.model';
   <label>Enter Details</label>
   <input #newDetails class="form-control">
 
-  <button class="btn btn-info" (click)="submitForm(newName.value, newCalories.value, newDetails.value);newName.value=''; newCalories.value=''; newDetails.value='';">Add</button>
+  <button class="btn btn-info btn btn-xs" (click)="submitForm(newName.value, newCalories.value, newDetails.value);newName.value=''; newCalories.value=''; newDetails.value='';">Add</button>
   </div>
   `
 })

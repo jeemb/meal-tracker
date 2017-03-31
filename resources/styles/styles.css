@@ -8,5 +8,12 @@ h3  {
 
 #new-food {
   border: 2px solid grey;
-  border-radius: 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#edit-food {
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 20px;
 }
