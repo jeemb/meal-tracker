@@ -5,7 +5,7 @@ import { Food } from './food.model';
 selector: 'food-list',
 template: `
 <ul>
-<li div *ngFor="let food of foods"> Name: {{food.name}} Calories: {{food.calories}} Details: {{food.details}} </li>
+<li div *ngFor="let food of foods" (click)="selectFood(food)"> Name: {{food.name}} Calories: {{food.calories}} Details: {{food.details}} </li>
 </ul>
 `
 })
@@ -16,6 +16,5 @@ export class FoodListComponent {
 
   selectFood(food: Food) {
   this.clickSender.emit(food);
-  console.log(food);
 }
 }

@@ -29,4 +29,8 @@ export class AppComponent {
     }
   }
 
+  finishedEditing() {
+    this.selectedFood = null;
+  }
+
 }
