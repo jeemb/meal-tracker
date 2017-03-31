@@ -7,5 +7,4 @@ import {Food} from './food.model';
 })
 
 export class CaloriesPipe implements PipeTransform {
-  
 }
