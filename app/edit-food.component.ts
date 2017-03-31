@@ -16,8 +16,8 @@ import { Food } from './food.model';
   `
 })
 
-export class EditKegComponent {
-    @Input() selectedKeg: Food[];
+export class EditFoodComponent {
+    @Input() selectedFood: Food[];
     @Output() clickSender = new EventEmitter();
 
     finishedEditing() {

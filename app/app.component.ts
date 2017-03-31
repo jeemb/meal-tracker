@@ -7,6 +7,7 @@ import { Food } from './food.model';
   <div class='container'>
     <h1>Meal Tracker</h1>
     <food-list [foods]="foods" (clickSender)="selectFood($event)"></food-list>
+    <edit-food [selectedFood]='selectedFood' (clickSender)="finishedEditing()"></edit-food>
   </div>
   `
 })
