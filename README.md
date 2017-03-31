@@ -6,7 +6,7 @@
 
 ## Description
 
-This Angular.js application displays food intake information. Users may add, edit, and delete food items consumed  and filter based on caloric content.
+This Angular.js application displays food intake information. Users may add and edit food items consumed  and filter based on caloric content.
 
 ## Setup/Installation Requirements
 
