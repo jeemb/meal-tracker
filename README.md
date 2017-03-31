@@ -1,6 +1,20 @@
+# Meal-Tracker
+
+This Angular.js application displays food intake information. Users may add, edit, and delete food items consumed  and filter based on caloric content.
+
+## Installation
+
+* `git clone <repository-url>`
+* `cd meal-tracker`
+* `npm install`
+* `bower install`
+* `gulp serve`
+* Visit [http://localhost:4200]
+
 ## Planning
 
 1. Integration
+  * Update README
   * Setup initial file structure
   * Create app.component.ts file with initial food information.
   * Create Food model
