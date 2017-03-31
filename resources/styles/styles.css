@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+h3  {
+  text-align: center;
+}
+
+#new-food {
+  border: 2px solid grey;
+  border-radius: 25px;
+}

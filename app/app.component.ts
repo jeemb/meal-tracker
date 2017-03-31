@@ -6,7 +6,10 @@ import { Food } from './food.model';
   template: `
   <div class='container'>
     <h1>Meal Tracker</h1>
+    <h3>Click on item to edit</h3>
+    <hr>
     <food-list [foods]="foods" (clickSender)="selectFood($event)"></food-list>
+    <hr>
     <edit-food [selectedFood]='selectedFood' (clickSender)="finishedEditing()"></edit-food>
     <new-food (newFoodSender)="newFood($event)"></new-food>
   </div>

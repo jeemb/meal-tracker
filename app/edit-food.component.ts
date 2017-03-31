@@ -4,15 +4,15 @@ import { Food } from './food.model';
 @Component({
   selector: 'edit-food',
   template: `
-  <div *ngIf="selectedFood">
-    <label>Name:</label>
-    <input [(ngModel)]="selectedFood.name">
-    <label>Calories</label>
-    <input [(ngModel)]="selectedFood.calories">
-    <label>Details</label>
-    <input [(ngModel)]="selectedFood.details">
-    <button (click)="finishedEditing()">Done</button>
-  </div>
+    <div *ngIf="selectedFood">
+      <label>Name:</label>
+      <input [(ngModel)]="selectedFood.name">
+      <label>Calories</label>
+      <input [(ngModel)]="selectedFood.calories">
+      <label>Details</label>
+      <input [(ngModel)]="selectedFood.details">
+      <button (click)="finishedEditing()">Done</button>
+    </div>
   `
 })
 
